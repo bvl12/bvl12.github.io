@@ -1,1 +1,45 @@
-hello world!
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taplist Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- SIMPLE CSS ANIMATION,  -->
+<body>
+    <script>
+        function rain(){
+            let numRaindrops = 1000;
+            let body = document.querySelector('body');
+            for (let iRaindrop = 0; iRaindrop < numRaindrops; iRaindrop++) {
+                let drop = document.createElement('iRaindrop');
+
+                let size = Math.random() * 5;
+                let posX = Math.floor(Math.random() * window.innerWidth);
+                let delay = Math.random() * -20;
+                let duration = 2 + Math.random() * 6;
+
+                drop.style.width = (0.1 + size) +'px';
+                drop.style.left = posX + 'px';
+                drop.style.animationDelay = delay + 's';
+                drop.style.animationDuration = duration + 's';
+
+                body.appendChild(drop);
+            }
+        }
+
+        rain();
+    </script>
+
+    <div>Test</div>
+</body>
+
+<!-- MORE DETAILED JS ANIMATION WITH SPLASHES, MUCH MORE TAXING -->
+<!-- <body>    
+    <canvas id="rainCanvas"></canvas>
+    <script src="index.js"></script>
+
+    <div>Test</div>
+</body> -->
+
+</html>
