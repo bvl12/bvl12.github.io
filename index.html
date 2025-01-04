@@ -4,9 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Taplist Test</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- SIMPLE CSS ANIMATION,  -->
 <body>
+    <!-- rain animation -->
     <script>
         function rain(){
             let numRaindrops = 1000;
@@ -31,15 +34,52 @@
         rain();
     </script>
 
-    <div>Test</div>
+    <div class="row">
+        <div class="col">
+            <image src="./images/peaches_and_dream.png" class="label"/>
+            <div class="info">
+                <h1>Peaches & Dream</h1>
+                <h2>Milkshake IPA</h2>
+                <h2>7.8% ABV</h2>
+                Description/Tasting Notes
+            </div>
+            <div class="tapnum">1</div>
+        </div>
+        
+        <div class="col">
+            <image src="./images/bs_porter.png" class="label"/>
+            <div class="info">
+                <h1>BS Porter</h1>
+                <h2>Porter</h2>
+                <h2>6.5% ABV</h2>
+                Description/Tasting Notes
+            </div>
+            <div class="tapnum">2</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <image src="./images/lawn_flamingos.png" class="label"/>
+            <div class="info">
+                <h1>Lawn Flamingos</h1>
+                <h2>American Light Ale</h2>
+                <h2>5% ABV</h2>
+                Description/Tasting Notes
+            </div>
+            <div class="tapnum">3</div>
+        </div>
+        <div class="col">
+            <image src="./images/candy_cane_seltzer.png" class="label"/>
+            <div class="info">
+                <h1>Candy Cane Hard Seltzer</h1>
+                <h2>Hard Seltzer</h2>
+                <h2>5% ABV</h2>
+                Description/Tasting Notes
+            </div>
+            <div class="tapnum">4</div>
+        </div>
+    </div>
 </body>
-
-<!-- MORE DETAILED JS ANIMATION WITH SPLASHES, MUCH MORE TAXING -->
-<!-- <body>    
-    <canvas id="rainCanvas"></canvas>
-    <script src="index.js"></script>
-
-    <div>Test</div>
-</body> -->
 
 </html>

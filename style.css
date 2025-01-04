@@ -1,9 +1,40 @@
 body {
     overflow: hidden;
     height: 100vh;
-    display: flex;
     min-height: 100vh;
-    background-color: transparent;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+.row {
+    z-index: 1;
+    height: 33%;
+    width: 100%;
+    display: flex;
+    clear: both;
+}
+
+
+.col {
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    border: rgb(147, 177, 199);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 5px;
+    width: calc(50% - 10px);
+    display: block;
+    clear: both;
+    display: flex;
+}
+
+.label {
+    border-radius: 5px;
+    margin: 5px;
+    height: calc(100% - 10px);
+    
 }
 
 canvas {
@@ -11,6 +42,40 @@ canvas {
     left:0;
     top:0;
     z-index:-1;
+    background-color: #2e2e2e;
+}
+
+h1 {
+    margin-bottom: -2px;
+    margin-top: 0;
+    font-family: 'Cabin Sketch';
+    font-size: 5vmin;
+}
+
+h2 {
+    margin-top: -2px;
+    margin-bottom: -2px;
+    font-family: 'Amatic SC';
+    font-size: 5vmin;
+}
+
+h3 {
+    margin-top: -2px;
+    font-family: 'Amatic SC';
+    font-size: 4vmin;
+}
+
+div {
+    font-family: 'Amatic SC';
+    font-size: 3.5vmin;
+}
+
+.tapnum {
+    font-size: 38vh;
+    margin-top: -8.5vh;
+    margin-left: auto;
+    margin-right: -0.5vw;
+    opacity: 50%;
 }
 
 iRaindrop {
